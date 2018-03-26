@@ -12,12 +12,16 @@ export class HeroesComponent implements OnInit {
     name:"kejl"
   }
   heroes = HEROES;
+  selectedHero: hero;
   constructor() {
     
    }
 
   ngOnInit() {
     
+  }
+  onSelect(hero: hero): void {
+    this.selectedHero = hero;
   }
 
 }
